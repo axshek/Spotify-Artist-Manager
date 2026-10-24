@@ -21,4 +21,3 @@ http://127.0.0.1:8888/callback
 ```
 
 Credentials are stored locally using the Windows Credential Manager when available; they are not included in this repository.
-
