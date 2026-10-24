@@ -13,15 +13,22 @@ Connect your Spotify account to browse your followed artists, search the list, a
 
 ## Setup
 
-```powershell
-python -m pip install -r requirements.txt
-python spotify_unfollow_gui.py
-```
+1. Sign in to your Spotify account (or create one) at the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard).
+2. Select **Create app** and follow the prompts to register an app.
+3. Open the app's settings and copy its **Client ID** and **Client Secret**. These are the credentials this tool needs; keep the Client Secret private.
+4. In the app settings, add this exact address under **Redirect URIs** and save the change:
 
-When prompted, enter your Spotify Client ID and Client Secret. Add this redirect URI to your Spotify Developer application:
+   ```text
+   http://127.0.0.1:8888/callback
+   ```
 
-```text
-http://127.0.0.1:8888/callback
-```
+5. Install the requirements and start the app:
 
-Credentials are stored locally using the Windows Credential Manager when available; they are not included in this repository.
+   ```powershell
+   python -m pip install -r requirements.txt
+   python spotify_unfollow_gui.py
+   ```
+
+6. When the app opens, enter the Client ID and Client Secret when prompted, then connect with your Spotify account to authorize access.
+
+Credentials are stored locally using the Windows Credential Manager when available; they are not included in this repository. Never share or commit your Client Secret.
