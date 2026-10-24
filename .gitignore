@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+.env.*
+*.log
+.cache
+token-cache.json
+spotify_token_cache.json
+
