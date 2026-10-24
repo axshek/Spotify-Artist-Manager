@@ -2,6 +2,10 @@
 
 A desktop Tkinter app for viewing and unfollowing Spotify artists.
 
+Connect your Spotify account to browse your followed artists, search the list, and unfollow one or more artists from a simple desktop interface.
+
+![Spotify Artist Manager showing followed artists](images/spotify-artist-manager.png)
+
 ## Requirements
 
 - Python 3.10+
